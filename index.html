@@ -95,7 +95,6 @@
     
     <button class="tab" onclick="showTab('spieler')">Spieler</button>
     <button class="tab" onclick="showTab('history')">Verlauf</button>
-    <button class="tab" onclick="showTab('tracker')">Tracker</button>
   </div>
 
   <!-- SETUP -->
@@ -151,15 +150,6 @@
       <button class="btn-primary" onclick="saveAdminPw()" style="width:100%">Passwort speichern</button>
       <div id="admin-pw-ok" style="display:none;margin-top:8px" class="success-box">✓ Passwort gespeichert</div>
     </div>
-    <div id="tracker-setup-card" style="display:none" class="card">
-      <div style="font-size:14px;font-weight:600;margin-bottom:6px">Spieltagstracker</div>
-      <div style="font-size:13px;color:#666;margin-bottom:12px">Ziel-Spiele pro Spieler und Spieltag. Wird lokal gespeichert und im Tracker-Tab angezeigt.</div>
-      <label>Ziel: Spiele pro Spieler pro Spieltag</label>
-      <input type="number" id="tracker-goal-input" min="1" max="20" value="5" style="margin-bottom:8px">
-      <button class="btn-primary" onclick="saveTrackerGoal()" style="width:100%">Ziel speichern</button>
-      <div id="tracker-goal-ok" style="display:none;margin-top:8px" class="success-box">✓ Gespeichert</div>
-    </div>
-  </div>
 
   <!-- TABELLE -->
   <div id="tabelle" style="display:none">
