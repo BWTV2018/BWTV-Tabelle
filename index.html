@@ -368,7 +368,6 @@ function showTab(t){
   if(t==='stats')renderStats();
   if(t==='h2h')renderH2H();
 }
-}
 
 function init(){const saved=localStorage.getItem(LKEY);if(saved){apiUrl=saved;showConnected();loadAll();}}
 function showConnected(){
